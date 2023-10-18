@@ -1,0 +1,11 @@
+/* Los estilos son solo aplicados al componente, no afecta a nada mas y en el html podemos ver que
+coloca algo como: _ngcontent-ng-c3464774140 */
+
+h1 {
+  font-size: 50px;
+}
+
+dd {
+  font-size: 2rem;
+  font-weight: bold;
+}
