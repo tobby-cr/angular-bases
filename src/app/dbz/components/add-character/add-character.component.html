@@ -1,0 +1,18 @@
+<h4>Agregar personaje</h4>
+
+<!-- Se usa () para los eventos y [] para los atributos.-->
+<form class="row" (ngSubmit)="emitCharacter()">
+
+  <!-- Enlace unidireccional (One-way binding) se hace con la sintaxis [] -->
+  <!-- <input type="text" [value]="character.name" class="form-control mb-2" placeholder="Nombre"> -->
+
+  <!-- Enlace bidireccional (Two-way binding) se hace con la sintaxis [()] -->
+  <input type="text" name="name" [(ngModel)]="character.name" class="form-control mb-2" placeholder="Nombre">
+
+  <input type="number" name="power" [(ngModel)]="character.power" class="form-control mb-2" placeholder="Poder">
+
+  <button type="submit" class="btn btn-primary">Agregar</button>
+
+  <!-- <pre>{{character | json}}</pre> -->
+
+</form>
